@@ -1,1 +1,1 @@
-web: gunicorn --chdir /mainapp/mainapp mainapp.wsgi:application--log - file -
+web: gunicorn --chdir ./mainapp/mainapp mainapp.wsgi:application--log - file -
