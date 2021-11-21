@@ -1,0 +1,90 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap%27');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: 'Hind Siliguri', sans-serif;
+}
+body{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background:#77BFC7;
+  padding: 0 10px;
+}
+.wrapper{
+  background: #FBFBF9;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0px 5px 10px rgba(0,0,0,0.1);
+}
+::selection{
+  background: rgba(23,162,184,0.3);
+}
+.wrapper form{
+  height: 50px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+form .url-icon{
+  position: absolute;
+  text-align: center;
+  font-size: 23px;
+  left: 35px;
+  color: #E9E4D4;
+  pointer-events: none;
+}
+form input:valid ~ .url-icon{
+  color: #77BFC7;
+}
+form input{
+  height: 100%;
+  width: 100%;
+  outline: none;
+  padding: 0 120px 0 45px;
+  font-size: 20px;
+  caret-color: #77BFC7;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  transition: all 0.1s ease;
+}
+
+/* .row-custom{
+  padding: 0 45px 0 45px;
+} */
+
+.row-custom{
+  /* position: absolute; */
+ right: 50px;
+ left: 50px;
+ bottom: -26px;
+  padding: 5px 15px;
+  font-size: 18px;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  background:#77BFC7 ;
+  color: #fff;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+p.longlink{
+  display: block;
+  justify-content: center;
+  text-align: center;
+  white-space: nowrap;
+  width:  530px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* p.longlink a{
+  text-decoration: none;
+} */
