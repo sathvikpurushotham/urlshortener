@@ -37,8 +37,8 @@
       {% if new_url %}
         <div class="mx-auto text-center mt-5">
           <h2 class="text-danger">Your shortened URL:</h2>
-          <p class=""><a href="{{new_url}}">{{new_url}}</a> </p>
-          <p class="longlink"><span class="text-danger">Previous URL:</span><a href="{{original_url}}" target="_blank" rel="noopener noreferrer">{{original_url}}</a> </p>
+          <p class=""><a href="{{new_url}}" target="_blank" rel="noopener noreferrer">{{new_url}}</a> </p>
+          <p class="longlink"><span class="text-danger">Previous URL:</span><a href="{{original_url}}" >{{original_url}}</a> </p>
           <!-- <p class="longlink"><a href="{{original_url}}"><span class="text-danger">Previous URL</span></a> </p>   -->
         </div>
       {% endif %}
